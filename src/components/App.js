@@ -3,10 +3,11 @@ import Route from "./Route";
 import Header from "./layout/Header";
 import Unsplash from "./unsplash/Unsplash";
 import Youtube from "./youtube/Youtube";
+import Footer from "../components/layout/Footer";
 class App extends Component {
   render() {
     return (
-      <div>
+      <>
         <Route path="/">
           <Header />
         </Route>
@@ -16,7 +17,8 @@ class App extends Component {
         <Route path="/youtube">
           <Youtube />
         </Route>
-      </div>
+        <Footer />
+      </>
     );
   }
 }
